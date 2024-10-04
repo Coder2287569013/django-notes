@@ -1,0 +1,6 @@
+<h1>Add Note</h1>
+<form action="{% url 'add-note' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Note</button>
+</form>
